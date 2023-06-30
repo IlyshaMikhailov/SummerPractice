@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SummerPractice</string>
+    <string name="click_me">Click me</string>
+    <string name="nazhmi">Нажми, чтобы начать</string>
+    <string name="done">Все готово!</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_text">Enter your text</string>
+    <string name="mix_il2812_gmail_com">mix.il2812@gmail.com</string>
+    <string name="_88005553535">88005553535</string>
+    <string name="enter_weight">Enter_weight</string>
+    <string name="enter_height">enter_height</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="name">Name</string>
+    <string name="age">age</string>
+    <string name="Вес">weight\n</string>
+    <string name="Рост">height</string>
+    <string name="Имя">name</string>
+    <string name="Возраст">age</string>
+    <string name="Age">Возраст</string>
+    <string name="Name">Имя</string>
+    <string name="Height">Рост</string>
+    <string name="Weight">Вес</string>
+    <string name="calories">Посчитайте ваши калории:</string>
+</resources>
