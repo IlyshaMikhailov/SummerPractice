@@ -48,12 +48,12 @@ class MainActivity : AppCompatActivity() {
                 etage?.error = getString(R.string.ageException)
                 isСorrect = false
             }
-            if(isСorrect)
+            if(isСorrect) {
                 Toast.makeText(this, "Валидация завершена", Toast.LENGTH_SHORT).show()
-            value =
-                (height.toInt() % 10 + weight.toDouble() % 10 + username.length + age.toInt() * 10).toString()
-            etvalue?.text = "Ответ:  $value"
-
+                value =
+                    (height.toInt() % 10 + weight.toDouble() % 10 + username.length + age.toInt() * 10).toString()
+                etvalue?.text = "Ответ:  $value"
+            }
         }
 
     }
