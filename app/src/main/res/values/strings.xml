@@ -11,6 +11,10 @@
     <string name="enter_height">enter_height</string>
     <string name="weight">weight</string>
     <string name="height">height</string>
+    <string name="nameexception">Имя введено неверно</string>
+    <string name="heightException">Рост введен неверно</string>
+    <string name="weightException">Вес введен неверно</string>
+    <string name="ageException">Возраст введен неверно</string>
     <string name="name">Name</string>
     <string name="age">age</string>
     <string name="Вес">weight\n</string>

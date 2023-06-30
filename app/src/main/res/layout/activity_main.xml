@@ -14,7 +14,7 @@
         android:background="@drawable/rounded_edittext_bg"
         android:gravity="center"
         android:text="@string/calories"
-        android:textSize="17dp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/weighttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -44,17 +44,17 @@
         android:gravity="center"
         android:hint="@string/Weight"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText4"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        android:minHeight="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/agetext"
+        app:layout_constraintEnd_toEndOf="@+id/heighttext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/heighttext"
+        app:layout_constraintTop_toBottomOf="@+id/heighttext"
         app:layout_constraintVertical_bias="0.321"
         tools:ignore="LabelFor,MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/heighttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="228dp"
@@ -63,17 +63,17 @@
         android:gravity="center"
         android:hint="@string/Height"
         android:inputType="number"
-        android:minHeight="48dp"
+        android:minHeight="48sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="@+id/nametext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/nametext"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/nametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittext_bg"
@@ -81,8 +81,8 @@
         android:gravity="center"
         android:hint="@string/Name"
         android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        android:minHeight="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/heighttext"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -91,7 +91,7 @@
         tools:ignore="LabelFor,MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/agetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittext_bg"
@@ -99,12 +99,12 @@
         android:gravity="center"
         android:hint="@string/Age"
         android:inputType="number"
-        android:minHeight="48dp"
+        android:minHeight="48sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="@+id/weighttext"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/weighttext"
+        app:layout_constraintTop_toBottomOf="@+id/heighttext"
         app:layout_constraintVertical_bias="0.585"
         tools:ignore="LabelFor,MissingConstraints" />
 
