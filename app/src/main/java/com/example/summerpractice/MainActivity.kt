@@ -27,26 +27,26 @@ class MainActivity : AppCompatActivity() {
 
         clickButton?.setOnClickListener {
             val username = etname.text.toString().trim()
-            val weight = etweight.text.toString().trim().toDouble()
-            val height = etheight.text.toString().trim().toInt()
-            val age = etage.text.toString().trim().toInt()
+            val weight = etweight.text.toString()
+            val height = etheight.text.toString()
+            val age = etage.text.toString()
             var value = etvalue.text
             if (username.isEmpty() || username.length > 50) {
                 etname.error = "Имя введено некорректно"
                 return@setOnClickListener
-            } else if (weight.toString().isEmpty() || weight > 250.0 || weight < 0.0) {
+            } else if (weight./*toString().*/isEmpty() || weight.toDouble() > 250.0 || weight.toDouble() < 0.0) {
                 etweight.error = "Вес введен некорректно!"
                 return@setOnClickListener
-            } else if (height.toString().isEmpty() || height> 250 || height< 0) {
+            } else if (height.toString().isEmpty() || height.toInt()> 250 || height.toInt()< 0) {
                 etheight.error = "Рост введен некорректно!"
                 return@setOnClickListener
-            } else if (age.toString().isEmpty() || age > 150 || age< 0) {
+            } else if (age.toString().isEmpty() || age.toInt() > 150 || age.toInt()< 0) {
                 etage.error = "Возраст введен некорректно!"
                 return@setOnClickListener
             } else
                 Toast.makeText(this, "Валидация завершена", Toast.LENGTH_SHORT).show()
             value =
-                (height % 10 + weight % 10 + username.length + age * 10).toString()
+                (height.toInt() % 10 + weight.toDouble() % 10 + username.length + age.toInt() * 10).toString()
             etvalue.text = "Ответ:  $value"
 
         }
