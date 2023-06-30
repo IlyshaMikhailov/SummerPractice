@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             val weight = etweight?.text.toString()
             val height = etheight?.text.toString()
             val age = etage?.text.toString()
-            var value = etvalue?.text
             var isСorrect = true
             if (username.isEmpty() || username.length > 50) {
                 etname?.error = getString(R.string.nameexception)
@@ -50,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
             if(isСorrect) {
                 Toast.makeText(this, "Валидация завершена", Toast.LENGTH_SHORT).show()
-                value =
+                val value =
                     (height.toInt() % 10 + weight.toDouble() % 10 + username.length + age.toInt() * 10).toString()
                 etvalue?.text = "Ответ:  $value"
             }
